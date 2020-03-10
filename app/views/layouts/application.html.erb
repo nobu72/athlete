@@ -10,6 +10,17 @@
   </head>
 
   <body>
+   <header class=header>
+    <div class=header--title>
+    <%= link_to "athlete", root_path, class: "header--title--text" %>
+    </div>
+    <div class=header--logout>
+    <%=link_to "log out", '#', class: "header--logout--btn" %>
+    </div>
+  </div>
+  </header>
+
     <%= yield %>
+
   </body>
 </html>

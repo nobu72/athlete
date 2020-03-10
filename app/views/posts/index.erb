@@ -1,0 +1,47 @@
+<div class=post__main>
+<%= link_to 'posts/new' do%>
+<i class="fas fa-plus fa-2x"></i>
+<% end %>
+    <div class=post__main__list>
+    <% @posts.each do |post| %>
+
+      <div class=post__main__list__text>
+        <div class=post__main__list__text--title><%=post.text%></div>
+        <div class=post__main__list__text--icon>
+         <%=link_to 'post_path(post.id)' do %>
+        <i class="fas fa-play-circle fa-2x"></i>
+        <% end %>
+        </div>
+      </div>
+      <%end%>
+    </div>
+  </div>
+</div>
+  <div class=tweet>
+    <div class=tweet__list>
+      <div class=tweet__list__text>
+       <p> ３月１２日の予定 </p>
+       <p> 集合時間　８：００ </p>
+       <p> 集合場所　上大岡駅 </p>
+       <p> ユニフォームの持参をお願いします </p>
+      </div>
+
+       <div class=tweet__list__text>
+       <p> ３月１２日の予定 </p>
+       <p> 集合時間　８：００ </p>
+       <p> 集合場所　上大岡駅 </p>
+       <p> ユニフォームの持参をお願いします </p>
+      </div>
+
+
+       <div class=tweet__list__text>
+       <p> ３月１２日の予定 </p>
+       <p> 集合時間　８：００ </p>
+       <p> 集合場所　上大岡駅 </p>
+       <p> ユニフォームの持参をお願いします </p>
+      </div>
+
+      
+    </div>
+  </div>
+

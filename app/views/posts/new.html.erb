@@ -1,0 +1,11 @@
+<div class=title>
+UP LOAD NEW VIDEO
+</div>
+
+
+<%= form_with model: @post, class: :form, local: true do |form| %>
+  <%= form.text_field :title, placeholder: :タイトル, class: :form__title %>
+  <%= form.file_field :video, placeholder: "Video Url" %>
+
+  <%= form.submit "SEND" %>
+  <% end%>

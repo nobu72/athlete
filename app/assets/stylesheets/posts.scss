@@ -1,0 +1,90 @@
+  .header{
+    background-color: #FF8C00;
+    height: 80px;
+    width: 100vw;
+    color: #333333;
+    display:flex;
+    &--title{
+      margin:0 auto;
+      font-size: xx-large;
+      padding-top: 15px;
+      &--text{
+        text-decoration: none;
+        color: #333333;
+        font-family:Impact;
+      }
+    }
+    &--logout{
+      padding-top: 50px;
+      padding-right: 30px;
+      text-align: right;
+      font-size: smaller;
+      font-family:Impact;
+     
+      &--btn{
+        text-decoration: none;
+        color: #333333;
+
+      }
+    }
+  }
+
+  .post__main{
+    background-color: royalblue;
+    height: calc(100vh - 80px);
+    width: calc(100% - 350px);
+    float:left;
+    &__list{
+      overflow: scroll;
+      background-color: orangered;
+      margin: 40px 40px;
+      width: calc(100%-60px);
+      height: 89%;
+      &__text{
+        height: 10%;
+        width: 100%;
+        background-color: yellowgreen;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        &--title{
+          padding-top: 20px;
+        }
+        &--icon{
+        padding: 15px 10px 10px;
+        font-size:15px;
+        .fa-play-circle{
+          height:10px;
+          color: #000000;
+        }
+        }
+      }
+    }  
+    .fa-plus{
+     float:left;
+     padding-left: 7px;
+     padding-top: 7px;
+
+     color: white;
+    } 
+  }
+
+  .tweet{
+    float:right;
+    height: calc(100vh - 80px);
+    width: 350px;
+    background-color: #33CCFF;
+    &__list{
+      overflow: scroll;
+      height:100%;
+
+    &__text{
+      margin-top: 20px;
+      height: 40%;
+      width: 100%;
+      background-color: #FF66CC;
+    }
+  }
+
+  }
+
