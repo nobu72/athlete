@@ -1,12 +1,19 @@
 <div class=post__main>
-<%= link_to 'posts/new' do%>
-<i class="fas fa-plus fa-2x"></i>
-<% end %>
+  <%= link_to 'posts/new' do%>  
+    <i class="fas fa-upload fa-2x"></i>
+  <% end %>
+
+  <%= link_to '#' do%>  
+    <i class="fas fa-clipboard-list fa-2x"></i>
+  <% end %>
     <div class=post__main__list>
     <% @posts.each do |post| %>
 
       <div class=post__main__list__text>
-        <div class=post__main__list__text--title><%=post.text%></div>
+      
+        <div class=post__main__list__text--title>
+         <%=post.text%>
+        </div>
         <div class=post__main__list__text--icon>
          <%=link_to "/posts/#{post.id}" do %>
         <i class="fas fa-play-circle fa-2x"></i>

@@ -2,12 +2,16 @@
     background-color: #FF8C00;
     height: 80px;
     width: 100vw;
-    color: #333333;
+    color: #D8D8D8;
     display:flex;
+    border:　10px;
+    border-bottom-color: #333333;
+
     &--title{
-      margin:0 auto;
+      // margin:0 auto;
+      margin-left: 25px;
       font-size: xx-large;
-      padding-top: 15px;
+      padding-top: 17px;
       &--text{
         text-decoration: none;
         color: #333333;
@@ -20,8 +24,12 @@
       text-align: right;
       font-size: smaller;
       font-family:Impact;
+      padding-left: 900px;
+      
+    
      
       &--btn{
+        text-align: right;
         text-decoration: none;
         color: #333333;
 
@@ -30,59 +38,90 @@
   }
 
   .post__main{
-    background-color: royalblue;
+    background-color: #D8D8D8;
     height: calc(100vh - 80px);
     width: calc(100% - 350px);
     float:left;
     &__list{
       overflow: scroll;
-      background-color: orangered;
-      margin: 40px 40px;
+      background-color: #D8D8D8;
+      margin: 20px 50px;
       width: calc(100%-60px);
       height: 89%;
       &__text{
+        font-size:23px;
+        font-weight: 900;
+        padding-left:15px;
+        text-align: left;
+        color: #333333;
         height: 10%;
         width: 100%;
-        background-color: yellowgreen;
+        background-color: #FF8C00;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
+        font-family:'ほのか明朝';  
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        
+      
+        
         &--title{
           padding-top: 20px;
+          text-align: center;
+          padding: auto;
         }
         &--icon{
         padding: 15px 10px 10px;
         font-size:15px;
         .fa-play-circle{
           height:10px;
-          color: #000000;
+          color: #333333;
         }
         }
       }
     }  
-    .fa-plus{
+    .fa-upload{
      float:left;
      padding-left: 7px;
      padding-top: 7px;
-
-     color: white;
+     color: #333333;
     } 
+    .fa-clipboard-list{
+      margin-left: 10px;
+      padding-top: 7px;
+      color: #333333;
+
+    }
   }
 
   .tweet{
     float:right;
     height: calc(100vh - 80px);
     width: 350px;
-    background-color: #33CCFF;
+    background-color: #D8D8D8;
     &__list{
       overflow: scroll;
       height:100%;
+      padding: 25px;
 
     &__text{
       margin-top: 20px;
       height: 40%;
       width: 100%;
-      background-color: #FF66CC;
+      background-color:white;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      p{
+        text-align: left;
+        padding-left:10px;
+        padding-top: 10px;
+
+      }
     }
   }
 

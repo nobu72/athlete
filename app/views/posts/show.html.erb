@@ -1,15 +1,21 @@
-<div class="postTitle">
-  <%= @post.text %>
-</div>
-<div class="postDate">
-<video src="@post.video"></video>
+<div class=content>
+  <div class="postTitle">
+    <%= @post.text %>
+  </div>
+  <div class=show__video>
+  <video  controls="controls" width="700" height="350">
+    <source src="<%=@post.video%>" >
+  </video>
+  </div>
+  <div class=coment>
+    <div class=coment__list>
+      <h1>coments</h1>
+
+      <div class=cpoment__list__text>
+      name : text
+      </div>
+    </div>
+    <div class=form>
+  </div>
 
 </div>
-<div class="postAuthor">
-</div>
-
-
-
-<video controls="controls" width="700" height="350">
-  <source src="<%=@post.video%>" >
-</video>

@@ -7,3 +7,27 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
+.content{
+  background-color: #D8D8D8;
+  height: calc(100vh - 80px);
+  width: 100vw;
+}
+.postTitle{
+  font-weight: 900;
+  font-size: xx-large;
+  font-family: 'ほのか明朝';  
+  text-align: center;
+}
+.show__video{
+  text-align: center;
+  video{
+    margin-top: 10px;
+    background: #333333;
+  }
+}
+.coment{
+margin: 0 auto;
+  width:700px;
+  height:300px;
+
+}
