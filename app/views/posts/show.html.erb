@@ -2,8 +2,14 @@
   <%= @post.text %>
 </div>
 <div class="postDate">
-<video src=<ActionDispatch::Http::UploadedFile:0x00007ff2cc072c60>></video>
-  <%# <%= @post.video %> 
+<video src="@post.video"></video>
+
 </div>
 <div class="postAuthor">
 </div>
+
+
+
+<video controls="controls" width="700" height="350">
+  <source src="<%=@post.video%>" >
+</video>

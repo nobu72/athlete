@@ -8,7 +8,7 @@
       <div class=post__main__list__text>
         <div class=post__main__list__text--title><%=post.text%></div>
         <div class=post__main__list__text--icon>
-         <%=link_to 'post_path(post.id)' do %>
+         <%=link_to "/posts/#{post.id}" do %>
         <i class="fas fa-play-circle fa-2x"></i>
         <% end %>
         </div>
