@@ -15,8 +15,9 @@
 .postTitle{
   font-weight: 900;
   font-size: xx-large;
-  font-family: 'ほのか明朝';  
+  font-family: 'ヒラギノ角ゴ Std W8';  
   text-align: center;
+  color: #333333;
 }
 .show__video{
   text-align: center;
@@ -26,8 +27,29 @@
   }
 }
 .coment{
-margin: 0 auto;
+  margin: 0 auto;
   width:700px;
-  height:300px;
+  height:325px;
+  position: relative;
+  overflow: scroll;
+  &__list{
+    font-family: 'ヒラギノ角ゴ Std W8';  
+    font-size: 30px;
+    color: #333333;
+  }
+  
+  .form{
+  position: absolute;
+  bottom: 5px;
+  position: fixed;
+  &__title{
+    width: 650px;
+    height: 70px;
+  .btn{
+    color: orange;
+  }
+  }
 
+  
+  }
 }

@@ -8,14 +8,18 @@
   </video>
   </div>
   <div class=coment>
-    <div class=coment__list>
-      <h1>coments</h1>
-
-      <div class=cpoment__list__text>
-      name : text
+    <% if @comments %>
+    <% @comments.each do |comment| %>
+      <div class=coment__list>
+         <%=comment.user.nickname %> : <%=comment.text%> 
       </div>
-    </div>
-    <div class=form>
-  </div>
+       <% end%>
+    <% end%>
 
+  
+  <%= form_with(model: [@post, @comment], class: :form, local: true) do |form| %>
+    <%= form.text_field :text, placeholder: :コメント, class: :form__title %>
+    <%= form.submit "SEND", class: :btn %>
+  <% end%>
+  </div>
 </div>
