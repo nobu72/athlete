@@ -6,6 +6,5 @@ UP LOAD NEW VIDEO
 <%= form_with model: @post, class: :form, local: true do |form| %>
   <%= form.text_field :text, placeholder: :タイトル, class: :form__title %>
   <%= form.file_field :video, placeholder: "Video Url" %>
-
   <%= form.submit "SEND" %>
   <% end%>

@@ -3,7 +3,7 @@
 //  *= require_self
 //  */
 
-
+@import "bootstrap";
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
@@ -29,7 +29,7 @@
 .coment{
   margin: 0 auto;
   width:700px;
-  height:325px;
+  height:300px;
   position: relative;
   overflow: scroll;
   &__list{
@@ -52,4 +52,20 @@
 
   
   }
+}
+
+.container-login {
+  @extend .container-fluid;
+  max-width: 576px;
+  padding: 2rem;
+}
+
+// 「ログインしました」などのフラッシュ用スタイル
+
+.alert-notice {
+  @extend .alert-info;
+}
+
+.alert-alert {
+  @extend .alert-danger;
 }
