@@ -6,4 +6,9 @@ class User < ApplicationRecord
 
    has_many :comments  
    has_many :posts
+
+   def configure_permitted_parameters
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:nickname])
+  end
+  
 end

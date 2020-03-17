@@ -69,3 +69,9 @@
 .alert-alert {
   @extend .alert-danger;
 }
+
+body{
+  background-color: #D8D8D8;
+  height: calc(100vh - 80px);
+  width: 100vw;
+}
