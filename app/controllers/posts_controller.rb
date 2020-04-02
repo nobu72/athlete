@@ -4,6 +4,7 @@ class PostsController < ApplicationController
 
 
   def index
+    @tweets = Tweet.all
     @posts = Post.all.order("id DESC")
  
   end

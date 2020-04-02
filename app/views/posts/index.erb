@@ -3,7 +3,7 @@
     <i class="fas fa-upload fa-2x"></i>
   <% end %>
 
-  <%= link_to '#' do%>  
+  <%= link_to  new_tweet_path do%>  
     <i class="fas fa-clipboard-list fa-2x"></i>
   <% end %>
     <div class=post__main__list>
@@ -24,15 +24,15 @@
 </div>
   <div class=tweet>
     <div class=tweet__list>
-      <div class=tweet__list__text>
-       <p> ３月１２日の予定 </p>
-       <p> 集合時間　８：００ </p>
-       <p> 集合場所　岸根高校 </p>
-       <p> ユニフォームの持参をお願いします </p>
+       <% @tweets.each do |tweet| %>
+        <div class=tweet__list__text>
+         <div class=tweet__list__text__title>
+          <%=tweet.title%>
+          </div>
+          <div class=tweet__list__text__text>
+          <%=tweet.text%>
+         </div>
       </div>
-
-
-      
+      <%end%>
     </div>
   </div>
-
